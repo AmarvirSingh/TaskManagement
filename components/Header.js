@@ -8,13 +8,13 @@ export default function Header() {
          <Button 
          style= {styles.btn} 
          title = '+'
-         color = 'white'/>
+         color = 'black'/>
         
         </View>
     )
 }
 const styles = StyleSheet.create({
     main:{
-        
+flexDirection:'row'
     }
 })
