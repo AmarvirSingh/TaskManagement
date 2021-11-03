@@ -1,12 +1,27 @@
 import { StatusBar } from 'expo-status-bar';
-import React from 'react';
+import React , {useState}from 'react';
 import { StyleSheet, Text, View } from 'react-native';
+import Header from './components/Header';
+import Input_Field from './components/Input_Field';
 
 export default function App() {
+
+  const [Task, setTask] = useState([
+    {
+      text: 'task1', key: '1'
+    },
+    {
+      text: 'task2', key: '2'
+    }
+  ])
+
+
+
+
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
+      <Header />
+
     </View>
   );
 }
