@@ -11,7 +11,7 @@ export default function App() {
       text: 'task1', key: '1'
     },
     {
-      text: 'task2', key: '2'
+      text: 'task3', key: '3'
     }
   ])
 
