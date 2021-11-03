@@ -28,6 +28,6 @@ export default function App() {
 
 const styles = StyleSheet.create({
   container: {
-    padding: Platform.OS === 'android' ? 20 : 0 
+    padding: Platform.OS === 'android' ? 25 : 0 
   },
 });
