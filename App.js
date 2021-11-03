@@ -3,6 +3,7 @@ import React , {useState}from 'react';
 import { Platform, StyleSheet, Text, View } from 'react-native';
 import Header from './components/Header';
 import Input_Field from './components/Input_Field';
+import Signup from './screens/Signup';
 
 export default function App() {
 
@@ -19,11 +20,8 @@ export default function App() {
 
 
   return (
-    <View style={styles.container}>
-      <Header />
-
-    </View>
-  );
+    <Signup/>
+    );
 }
 
 const styles = StyleSheet.create({
