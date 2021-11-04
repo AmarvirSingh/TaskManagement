@@ -8,7 +8,8 @@ export default function Header() {
             <Button
                 style={styles.btn}
                 title='+'
-                color='black' />
+                color='black' 
+                accessibilityLabel = 'Add Task'/>
 
         </View>
     )
@@ -17,7 +18,7 @@ const styles = StyleSheet.create({
     main: {
         flexDirection: 'row',
         padding:10,
-        justifyContent:'space-evenly'
+        justifyContent:'space-between'
     },
     heading:{
         fontSize:20,
