@@ -1,10 +1,11 @@
 
-import React , {useState}from 'react';
-import { Platform, StyleSheet, Text, View , StatusBar, FlatList, Button} from 'react-native';
+import React, { useState } from 'react';
+import { Platform, StyleSheet, Text, View, StatusBar, FlatList, Button } from 'react-native';
 import Header from './components/Header';
 import Input_Field from './components/Input_Field';
+import AddTask from './screens/AddTask';
 import MainScreen from './screens/MainScreen';
-import Signup from './screens/Signup';
+// import Signup from './screens/Signup';
 
 export default function App() {
 
@@ -24,8 +25,8 @@ export default function App() {
 
 
   return (
-    <View style = {styles.container}>
-    <MainScreen />
+    <View style={styles.container}>
+      {/* <MainScreen />
 
     <FlatList  style = {styles.list}
     data = {Task}
@@ -48,18 +49,20 @@ export default function App() {
     )
   }
     />
+ */}
 
+<AddTask/>
 
 
     </View>
-    );
+  );
 }
 
 const styles = StyleSheet.create({
   container: {
-    padding: Platform.OS === 'android' ? StatusBar.currentHeight : 0 
+    padding: Platform.OS === 'android' ? StatusBar.currentHeight : 0
   },
-  list:{
- 
+  list: {
+
   }
 });
